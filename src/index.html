@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
+
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,500&family=Poppins:ital,wght@0,200;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>Card Validator</header><br><br>
+    <main>
+      
+        <div id="div1" style="display: block;">
+
+            <label class="cardNumber" for="saveCard">Ingresar la tajeta que desee validar</label>
+            <br><br>
+            <input class="validador" type="text" id="numberCard" placeholder="Número de Tarjeta" name="numerodeTarjeta" required>
+            <button id="validar" class="Valid"><strong>Validar</strong></button>
+
+        </div>
+        <p id="p1" class="parrafo" style="display: none;"> </p> <br><br>
+        <p id="p2" class="parrafo2" style="display: block;"> </p>
+        <button id="retrn" class="return" style="display: none;"> <strong>Volver a intentar</strong></button>
+  
+    </main>
+
+
+    <footer> </footer>
     <script src="index.js" type="module"></script>
-  </body>
+</body>
+
 </html>
